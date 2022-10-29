@@ -81,6 +81,8 @@
   transform: translateY(-50%);
   width: 100%;
   z-index: 1;
+  color: var(--difb);
+  mix-blend-mode: difference;
 }
 #menu ul {
   display: flex;

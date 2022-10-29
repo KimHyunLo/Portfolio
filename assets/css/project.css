@@ -26,6 +26,7 @@
 .int {
   position: relative;
   display: flex;
+  background: var(--theme);
 }
 .box.intro .project__title {
   padding-left: 3rem;
@@ -62,16 +63,28 @@
   color: var(--gray);
 }
 .box.intro .box__bottom .intro__btn {
-  margin-right: 1.5vw;
+  margin-right: 4vw;
 }
 .box.intro .box__bottom .intro__btn button {
-  font-size: 1.2vw;
-  margin-right: 3vw;
+  font-size: 1.3vw;
+  margin-right: 3rem;
+  color: var(--green);
+  border-bottom: 1px solid var(--green);
+}
+.box.intro .box__bottom .intro__btn button:last-child {
+  margin-right: 0;
 }
 
-.box.infoImg img {
+.box.infoImg img:first-child {
   height: 100%;
   object-fit: cover;
+}
+.box.infoImg .arrow {
+  position: absolute;
+  right: 3rem;
+  bottom: 1rem;
+  width: 7rem;
+  z-index: 2;
 }
 
 .box.info {
