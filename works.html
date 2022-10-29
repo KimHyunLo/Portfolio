@@ -1,7 +1,3 @@
-<?php
-  include "./connect/connect.php";
-  include "./connect/session.php";
-?>
 <!DOCTYPE html>
 <html lang="ko">
   <head>
@@ -13,19 +9,104 @@
     <link rel="stylesheet" href="assets/css/pageLoad.css" />
   </head>
   <body>
-<?php
-  include "include/common.php";
-?>
-<?php
-  include "include/header.php";
-?>
+    <div class="pageLoad">
+      <div class="lines">
+        <li class="line"></li>
+        <li class="line"></li>
+        <li class="line"></li>
+        <li class="line"></li>
+        <li class="line"></li>
+      </div>
+      <div class="text__box">
+        <div class="text">
+          <span>M</span><span>y</span> <span>W</span><span>o</span><span>r</span
+          ><span>k</span><span>s</span>
+        </div>
+        <div class="underline"></div>
+      </div>
+    </div>
+    <div class="resMenu">
+      <ul>
+        <li>
+          <a href="#" name="about" class="link">
+            <div>01</div>
+            <div><em>A</em>bout</div>
+          </a>
+        </li>
+        <li>
+          <a href="#" name="works" class="link">
+            <div>02</div>
+            <div><em>W</em>orks</div>
+          </a>
+        </li>
+        <li>
+          <a href="#" name="scripts" class="link">
+            <div>03</div>
+            <div><em>S</em>cripts</div>
+          </a>
+        </li>
+        <li>
+          <a href="#" name="contact" class="link">
+            <div>04</div>
+            <div><em>C</em>ontact</div>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <header id="header">
+      <div id="header__left" class="header__item">
+        <div class="item__left">
+          <img src="assets/img/main/megaphone.svg" alt="megaphone" />
+        </div>
+        <div class="item__left">Highflier Developer</div>
+      </div>
+      <a href="#" id="header__mid" name="index" class="header__item link">
+        <span>perf<em>an</em></span>
+      </a>
+      <div id="header__right" class="header__item">
+        <span class="none">portfolio</span>
+        <span id="header__burger" class="res">
+          <div></div>
+          <div></div>
+        </span>
+      </div>
+    </header>
     <div id="container">
       <section id="title">
         <span>My<em>Work</em></span>
       </section>
-<?php
-  include "include/menu.php";
-?>
+      <section id="menu" class="none">
+        <ul>
+          <li>
+            <a href="#" name="about" class="link">
+              <div class="menu__num">01</div>
+              <div class="menu__tit">about</div>
+            </a>
+          </li>
+          <li>
+            <a href="#" name="works" class="link">
+              <div class="menu__num">02</div>
+              <div class="menu__tit">works</div>
+            </a>
+          </li>
+          <li>
+            <a href="#" name="scripts" class="link">
+              <div class="menu__num">03</div>
+              <div class="menu__tit">scripts</div>
+            </a>
+          </li>
+          <li>
+            <a href="#" name="contact" class="link">
+              <div class="menu__num">04</div>
+              <div class="menu__tit">contact</div>
+            </a>
+          </li>
+          <li>
+            <div class="menu__num"></div>
+            <div class="menu__tit">2022 &copy;</div>
+          </li>
+        </ul>
+      </section>
       <section class="top-space"></section>
       <div id="work__inner">
         <section id="work__box">
@@ -119,9 +200,38 @@
               </a>
             </div>
           </div>
-<?php
-  include "include/menu.php";
-?>
+          <section id="menu" class="none">
+            <ul>
+              <li>
+                <a href="#" name="about" class="link">
+                  <div class="menu__num">01</div>
+                  <div class="menu__tit">about</div>
+                </a>
+              </li>
+              <li>
+                <a href="#" name="works" class="link">
+                  <div class="menu__num">02</div>
+                  <div class="menu__tit">works</div>
+                </a>
+              </li>
+              <li>
+                <a href="#" name="scripts" class="link">
+                  <div class="menu__num">03</div>
+                  <div class="menu__tit">scripts</div>
+                </a>
+              </li>
+              <li>
+                <a href="#" name="contact" class="link">
+                  <div class="menu__num">04</div>
+                  <div class="menu__tit">contact</div>
+                </a>
+              </li>
+              <li>
+                <div class="menu__num"></div>
+                <div class="menu__tit">2022 &copy;</div>
+              </li>
+            </ul>
+          </section>
         </section>
       </div>
     </div>

@@ -8,35 +8,16 @@ window.onload = () => {
     },
     {
       y: 0,
-      duration: 1,
-      stagger: -0.05,
-      ease: Expo.easeInOut,
-    }
-  );
-  gsap.fromTo(
-    ".pageLoad .text__box .underline",
-    {
-      width: 0,
-    },
-    {
-      width: "100%",
-      duration: 1,
-      delay: 1.3,
-      ease: Expo.easeInOut,
+      stagger: 0.05,
+      ease: Power1.easeInOut,
     }
   );
   gsap.to(".pageLoad .text__box .text span", {
-    y: 100,
+    y: 200,
     duration: 1,
-    stagger: -0.05,
-    ease: Expo.easeInOut,
-    delay: 2.3,
-  });
-  gsap.to(".pageLoad .text__box .underline", {
-    width: 0,
-    duration: 1,
-    delay: 3.3,
-    ease: Expo.easeInOut,
+    stagger: 0.05,
+    ease: Power1.easeInOut,
+    delay: 1.5,
   });
   gsap.fromTo(
     ".pageLoad .lines .line",
@@ -48,24 +29,24 @@ window.onload = () => {
       stagger: 0.1,
       ease: Expo.easeInOut,
       duration: 2,
-      delay: 4.3,
+      delay: 1.8,
     }
   );
   setTimeout(() => {
     $(".pageLoad").css("z-index", "-1");
-  }, 6500);
+  }, 3500);
 
   //common
   gsap.fromTo(
     "#title span",
     {
-      y: 400,
+      y: 350,
     },
     {
       y: 0,
       duration: 1.5,
       ease: Power3.easeInOut,
-      delay: 5.5,
+      delay: 3,
     }
   );
   gsap.fromTo(
@@ -79,7 +60,7 @@ window.onload = () => {
       opacity: 1,
       duration: 1.5,
       ease: Power3.easeInOut,
-      delay: 6,
+      delay: 3.5,
     }
   );
   gsap.fromTo(
@@ -93,7 +74,7 @@ window.onload = () => {
       opacity: 1,
       duration: 1.5,
       ease: Power3.easeInOut,
-      delay: 6,
+      delay: 3.5,
     }
   );
 
@@ -107,9 +88,9 @@ window.onload = () => {
     {
       y: 0,
       opacity: 1,
-      duration: 1.5,
-      ease: Power3.easeInOut,
-      delay: 6.5,
+      duration: 1,
+      ease: Power1.easeInOut,
+      delay: 4,
     }
   );
   gsap.fromTo(
@@ -121,9 +102,9 @@ window.onload = () => {
     {
       y: 0,
       opacity: 1,
-      duration: 1.5,
-      ease: Power3.easeInOut,
-      delay: 6,
+      duration: 1,
+      ease: Power1.easeInOut,
+      delay: 4,
     }
   );
   gsap.fromTo(
@@ -135,9 +116,9 @@ window.onload = () => {
     {
       y: 0,
       opacity: 1,
-      duration: 1.5,
-      ease: Power3.easeInOut,
-      delay: 6.5,
+      duration: 1,
+      ease: Power1.easeInOut,
+      delay: 4,
     }
   );
   gsap.fromTo(
@@ -151,7 +132,7 @@ window.onload = () => {
       opacity: 1,
       duration: 1.5,
       ease: Power3.easeInOut,
-      delay: 6.5,
+      delay: 4,
     }
   );
 
@@ -167,7 +148,7 @@ window.onload = () => {
       opacity: 1,
       duration: 1.5,
       ease: Power3.easeInOut,
-      delay: 6.5,
+      delay: 4,
     }
   );
 
@@ -183,7 +164,7 @@ window.onload = () => {
       opacity: 1,
       duration: 1.5,
       ease: Power3.easeInOut,
-      delay: 6.5,
+      delay: 4,
     }
   );
 
@@ -199,7 +180,7 @@ window.onload = () => {
       opacity: 1,
       duration: 1.5,
       ease: Power3.easeInOut,
-      delay: 6.5,
+      delay: 4,
     }
   );
 
@@ -215,23 +196,7 @@ window.onload = () => {
       opacity: 1,
       duration: 1.5,
       ease: Power3.easeInOut,
-      delay: 6.5,
-    }
-  );
-
-  // board
-  gsap.fromTo(
-    ".board",
-    {
-      y: 10,
-      opacity: 0,
-    },
-    {
-      y: 0,
-      opacity: 1,
-      duration: 1.5,
-      ease: Power3.easeInOut,
-      delay: 6.5,
+      delay: 4,
     }
   );
 };
@@ -253,6 +218,6 @@ $(".link").click((e) => {
     }
   );
   setTimeout(() => {
-    location.href = `${e.currentTarget.name}.php`;
+    location.href = `${e.currentTarget.name}.html`;
   }, 2500);
 });

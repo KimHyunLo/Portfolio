@@ -1,7 +1,3 @@
-<?php
-  include "./connect/connect.php";
-  include "./connect/session.php";
-?>
 <!DOCTYPE html>
 <html lang="ko">
   <head>
@@ -9,58 +5,129 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Perfect Plan</title>
-    <link rel="stylesheet" href="assets/css/contact.css" />
+    <link rel="stylesheet" href="assets/css/index.css" />
     <link rel="stylesheet" href="assets/css/pageLoad.css" />
   </head>
   <body>
-<?php
-  include "include/common.php";
-?>
-    <div id="contact">
-      <div id="contact__inner">
-<?php
-  include "include/header.php";
-?>
+    <div class="pageLoad">
+      <div class="lines">
+        <li class="line"></li>
+        <li class="line"></li>
+        <li class="line"></li>
+        <li class="line"></li>
+        <li class="line"></li>
+      </div>
+      <div class="text__box">
+        <div class="text">
+          <span>P</span><span>e</span><span>r</span><span>f</span><span>e</span
+          ><span>c</span><span>t</span> <span>P</span><span>l</span
+          ><span>a</span><span>n</span>
+        </div>
+        <div class="underline"></div>
+      </div>
+    </div>
+    <div class="resMenu">
+      <ul>
+        <li>
+          <a href="#" name="about" class="link">
+            <div>01</div>
+            <div><em>A</em>bout</div>
+          </a>
+        </li>
+        <li>
+          <a href="#" name="works" class="link">
+            <div>02</div>
+            <div><em>W</em>orks</div>
+          </a>
+        </li>
+        <li>
+          <a href="#" name="scripts" class="link">
+            <div>03</div>
+            <div><em>S</em>cripts</div>
+          </a>
+        </li>
+        <li>
+          <a href="#" name="contact" class="link">
+            <div>04</div>
+            <div><em>C</em>ontact</div>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div id="main">
+      <header id="header">
+        <div id="header__left" class="header__item">
+          <div class="item__left">
+            <img src="assets/img/main/megaphone.svg" alt="megaphone" />
+          </div>
+          <div class="item__left">Highflier Developer</div>
+        </div>
+        <a href="#" id="header__mid" name="index" class="header__item link">
+          <span>perf<em>an</em></span>
+        </a>
+        <div id="header__right" class="header__item">
+          <span class="none">portfolio</span>
+          <span id="header__burger" class="res">
+            <div></div>
+            <div></div>
+          </span>
+        </div>
+      </header>
+      <div id="main__inner">
         <section id="title">
-          <span>Contact<em>Me</em></span>
+          <span>Perfect<em>Plan</em></span>
         </section>
-<?php
-  include "include/menu.php";
-?>
-        <section class="contact__box">
-          <div class="contact__info">
-            <div>
-              <li>
-                <span>Designer:</span>
-                <span>Hyunlo-Kim</span>
-              </li>
-              <li>
-                <span>Developer:</span>
-                <span>Hyunlo-Kim</span>
-              </li>
+        <section id="menu" class="none">
+          <ul>
+            <li>
+              <a href="#" name="about" class="link">
+                <div class="menu__num">01</div>
+                <div class="menu__tit">about</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" name="works" class="link">
+                <div class="menu__num">02</div>
+                <div class="menu__tit">works</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" name="scripts" class="link">
+                <div class="menu__num">03</div>
+                <div class="menu__tit">scripts</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" name="contact" class="link">
+                <div class="menu__num">04</div>
+                <div class="menu__tit">contact</div>
+              </a>
+            </li>
+            <li>
+              <div class="menu__num"></div>
+              <div class="menu__tit">2022 &copy;</div>
+            </li>
+          </ul>
+        </section>
+        <section id="main__box">
+          <div class="main__item star">
+            <div class="main__star">
+              <img src="./assets/img/main/star.svg" alt="star" />
             </div>
-            <div>
-              <li>
-                <span>Social:</span>
-                <span class="social">
-                  <a href="https://github.com/KimHyunLo" target="_blank">
-                    Github
-                  </a>
-                  <a href="https://perfect-plan.tistory.com/" target="_blank">
-                    Blog
-                  </a>
-                </span>
-              </li>
-              <li>
-                <span>Email:</span>
-                <span>leeas016@gmail.com</span>
-              </li>
+            <div class="main__text">
+              <p>
+                Perfect Plan은 기획, 설계부터 레이아웃, 디자인, 구성요소
+                설정까지 디테일한 계획을 따라 만들어진 포트폴리오입니다.
+              </p>
+              <p class="res">
+                웹 디자인/설계 등의 요소에 흥미가 많으며 프로젝트를 할 때 개발
+                뿐만 아니라 다른 분야에도 관심을 가지는 편입니다.
+              </p>
             </div>
           </div>
-          <div class="contact__img">
+          <div class="main__item vector">
             <svg
-              width="394"
-              height="292"
+              class="main__img"
               viewBox="0 0 394 292"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -375,12 +442,53 @@
               </g>
             </svg>
           </div>
+          <div class="main__item star none">
+            <div class="main__star">
+              <img src="./assets/img/main/star.svg" alt="star" />
+            </div>
+            <div class="main__text">
+              <p>
+                웹 디자인/설계 등의 요소에 흥미가 많으며 프로젝트를 할 때 개발
+                뿐만 아니라 다른 분야에도 관심을 가지는 편입니다.
+              </p>
+            </div>
+          </div>
         </section>
+        <article id="footer__sns">
+          <a
+            href="https://github.com/KimHyunLo"
+            target="_blank"
+            class="sns__item"
+          >
+            <img src="./assets/img/main/git.svg" alt="sns" />
+          </a>
+          <a
+            href="https://perfect-plan.tistory.com/"
+            target="_blank"
+            class="sns__item"
+          >
+            <img src="./assets/img/main/tistory.svg" alt="sns" />
+          </a>
+          <a
+            href="https://www.instagram.com/leeas016/"
+            target="_blank"
+            class="sns__item"
+          >
+            <img src="./assets/img/main/insta.svg" alt="sns" />
+          </a>
+        </article>
+        <article id="footer__text">
+          <span>Coding for a living.</span>
+          <span>Ordinary Front-end developer.</span>
+        </article>
       </div>
     </div>
     <script src="./js/jquery.js"></script>
+    <script src="./js/scrollTrigger.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-    <script src="./js/common.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
     <script src="./js/pageTrans.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/common.js"></script>
   </body>
 </html>
