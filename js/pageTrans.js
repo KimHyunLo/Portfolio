@@ -29,18 +29,18 @@ window.onload = () => {
       stagger: 0.1,
       ease: Expo.easeInOut,
       duration: 2,
-      delay: 1.8,
+      delay: 2,
     }
   );
   setTimeout(() => {
     $(".pageLoad").css("z-index", "-1");
-  }, 3500);
+  }, 4000);
 
   //common
   gsap.fromTo(
     "#title span",
     {
-      y: 350,
+      y: 400,
     },
     {
       y: 0,
@@ -202,7 +202,7 @@ window.onload = () => {
 };
 
 // 버튼 클릭
-$(".link").click((e) => {
+$(".link").click(function (e) {
   e.preventDefault();
   $(".pageLoad").css("z-index", "10");
   gsap.fromTo(
@@ -218,6 +218,6 @@ $(".link").click((e) => {
     }
   );
   setTimeout(() => {
-    location.href = `${e.currentTarget.name}.html`;
+    location.href = $(this).attr("name") + ".html";
   }, 2500);
 });

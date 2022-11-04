@@ -55,36 +55,28 @@
   margin-top: 1.5vw;
 }
 
+/* work cards */
 #work__box #work__cards {
   position: absolute;
   top: 0;
   left: 50%;
   transform: translate(-50%, 40%);
 }
-#work__box #work__cards .card {
-  margin-bottom: 8vw;
-  cursor: pointer;
+#work__box #work__cards .card__box {
+  display: flex;
 }
-#work__box #work__cards a {
+#work__box #work__cards .card__box.right__card {
+  flex-direction: row-reverse;
+}
+#work__box #work__cards .card {
+  position: relative;
+  margin-bottom: 3vw;
+  cursor: pointer;
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-#work__box #work__cards li {
-  width: 35vw;
-  height: 20vw;
-  background: url(../img/work/card.png);
-  border-radius: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  line-height: 1;
-  border: 0.5rem solid var(--theme);
-}
-#work__box #work__cards .card {
-  position: relative;
   perspective: 1200px;
   transform-style: preserve-3d;
 }
@@ -109,25 +101,40 @@
   transform: rotateY(0deg);
   z-index: 1;
 }
+#work__box #work__cards .left__card .card {
+  transform: translateX(-20%) rotate(-10deg);
+}
+#work__box #work__cards .left__card .card__info {
+  transform: translateX(10%);
+}
+#work__box #work__cards .right__card .card {
+  transform: translateX(20%) rotate(10deg);
+}
+#work__box #work__cards .right__card .card__info {
+  transform: translateX(-10%);
+}
 #work__box #work__cards .card li {
+  width: 35vw;
+  height: 20vw;
+  background: url(../img/work/card.png);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  border: 0.5rem solid var(--theme);
   backface-visibility: hidden;
 }
-#work__cards li img {
+#work__box #work__cards .card li:last-child {
+  margin-bottom: 0;
+}
+#work__box #work__cards .card li img {
   width: 95%;
   height: 92%;
   border-radius: 1rem;
   border: 0.2rem solid var(--theme);
 }
-#work__box #work__cards li:last-child {
-  margin-bottom: 0;
-}
-#work__box #work__cards .left__card {
-  transform: translateX(-60%) rotate(-10deg);
-}
-#work__box #work__cards .right__card {
-  transform: translateX(60%) rotate(10deg);
-}
-#work__cards li h1 {
+#work__box #work__cards .card li h1 {
   color: var(--theme);
   font-family: "Caorgen";
   text-transform: capitalize;
@@ -139,6 +146,37 @@
   line-height: 18vw;
   text-align: center;
 }
+#work__box #work__cards .card__info {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+#work__box #work__cards .card__info h2 {
+  font-size: 4vw;
+  font-family: "Bodoni Moda";
+  color: var(--green);
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--green);
+}
+#work__box #work__cards .card__info ul {
+  display: flex;
+  flex-direction: column;
+}
+#work__box #work__cards .card__info ul li {
+  display: flex;
+  justify-content: center;
+  width: 30vw;
+  font-size: 1.6rem;
+}
+#work__box #work__cards .card__info ul li .gray {
+  color: var(--gray);
+  width: 40%;
+  margin-bottom: 1rem;
+}
+#work__box #work__cards .card__info ul li .desc {
+  width: 60%;
+}
 
 /* 0px ~ 1024px */
 @media (max-width: 1024px) {
@@ -149,7 +187,7 @@
 /* 0px ~ 768px */
 @media (max-width: 768px) {
   #work__box #work__bg {
-    height: 400vw;
+    height: 380vw;
   }
   #work__box #work__bg .rocket {
     width: 26vw;
@@ -180,24 +218,24 @@
   #work__box #work__cards {
     transform: translate(-50%, 25%);
   }
-  #work__box #work__cards .card {
-    margin-bottom: 10vw;
-  }
-  #work__box #work__cards li {
+  #work__box #work__cards .card li {
     width: 70vw;
     height: 40vw;
   }
-  #work__box #work__cards li:last-child {
+  #work__box #work__cards .card li:last-child {
     margin-bottom: 10rem;
   }
-  #work__box #work__cards li h1 {
+  #work__box #work__cards .card li h1 {
     font-size: 8vw;
     line-height: 35vw;
   }
-  #work__box #work__cards .card.left__card {
+  #work__box #work__cards .left__card .card {
     transform: translateX(0%) rotate(-5deg);
   }
-  #work__box #work__cards .card.right__card {
+  #work__box #work__cards .right__card .card {
     transform: translateX(0%) rotate(5deg);
+  }
+  #work__box #work__cards .card__info {
+    display: none;
   }
 }
